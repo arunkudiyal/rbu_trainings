@@ -94,7 +94,7 @@
      <hr />
 
      <h3>HTML Signup Forms - </h3>
-     <form>
+     <form action="https://www.myBE.php/">
         <!-- <span>Your Name : </span><input type=""  /> -->
         <input type="text" placeholder="enter your name..." /> <br /> <br />
         <!-- Email :- username@hostname.com -->
@@ -103,9 +103,19 @@
         <input type="date" /> <br /> <br />
         <input type="range" /> <br /> <br />
         <label>Enter you gender - </label> <br /> <br />
-        <input type="checkbox" /> Male <br />
+        <!-- <input type="checkbox" /> Male <br />
         <input type="checkbox" /> Female <br />
-        <input type="checkbox" /> Others <br />
+        <input type="checkbox" /> Others <br /> -->
+        <select>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Others</option>
+        </select> <br /> <br />
+        <label>Upload you CV - </label>
+        <input type="file" /> <br /> <br />
+        <input type="color" /> <br /> <br />
+        <button onclick="console.log('Btn was clicked!')">Click Me!</button>
+        <input type="submit" value="Sign Up" />
      </form>
 
     <div style="height: 250px;"></div>
