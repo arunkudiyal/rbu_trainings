@@ -96,28 +96,77 @@
      <h3>HTML Signup Forms - </h3>
      <form action="https://www.myBE.php/">
         <!-- <span>Your Name : </span><input type=""  /> -->
-        <input type="text" placeholder="enter your name..." /> <br /> <br />
+        <div>
+            <input type="text" placeholder="enter your name..." /> 
+        </div>
         <!-- Email :- username@hostname.com -->
-        <input type="email" placeholder="enter your email..." /> <br /> <br />
-        <input type="password" placeholder="enter your password..." /> <br /> <br />
-        <input type="date" /> <br /> <br />
-        <input type="range" /> <br /> <br />
-        <label>Enter you gender - </label> <br /> <br />
+        <div>
+            <input type="email" placeholder="enter your email..." />
+        </div>
+         <div>
+            <input type="password" placeholder="enter your password..." /> 
+         </div>
+        <div>
+            <input type="date" /> 
+        </div>
+        <div>
+            <input type="range" />
+        </div> 
+        <label>Enter you gender - </label> 
         <!-- <input type="checkbox" /> Male <br />
         <input type="checkbox" /> Female <br />
         <input type="checkbox" /> Others <br /> -->
-        <select>
-            <option>Male</option>
-            <option>Female</option>
-            <option>Others</option>
-        </select> <br /> <br />
-        <label>Upload you CV - </label>
-        <input type="file" /> <br /> <br />
-        <input type="color" /> <br /> <br />
-        <button onclick="console.log('Btn was clicked!')">Click Me!</button>
-        <input type="submit" value="Sign Up" />
+        <div>
+            <select>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Others</option>
+            </select> 
+        </div>
+        <div>
+            <label>Upload you CV - </label>
+            <input type="file" /> 
+        </div>
+        <div>
+            <input type="color" /> 
+        </div>
+        <div>
+            <button onclick="console.log('Btn was clicked!')">Click Me!</button>
+        </div>
+        <div>
+            <input type="submit" value="Sign Up" />
+        </div>
      </form>
 
+     <hr />
+
+     <h3>HTML5 Semantics :- </h3>
+     <div id="page">
+        <div id="header"></div>
+        <div id="left-aside"></div>
+        <div id="main">
+            <div id="article-1"></div>
+            <div id="article-2"></div>
+            <div id="article-3"></div>
+            <div id="article-4"></div>
+        </div>
+        <div id="footer"></div>
+     </div>
+
+     <div id="page">
+        <header id="">
+            <nav></nav>
+        </header>
+        <aside></aside>
+        <main>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+        </main>
+        <footer></footer>
+     </div>
+     
     <div style="height: 250px;"></div>
 </body>
 </html>
