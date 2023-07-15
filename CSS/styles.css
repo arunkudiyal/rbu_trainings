@@ -6,7 +6,49 @@ h1 {
     color: blue;
 }
 /* b.) id Selector - Selects the element based on the id. */
-#heading-one {
+#heading-one:hover {
     color: green;
 }
 /* c.) class Selector - Selects the elements based on the class name */
+/* #para-one, #para-two, #para-four {
+    color: gray;
+} */
+.myPara {
+    color: gray;
+}
+/* d.) Attribute Slector */
+/* elementName[attributeName condition] */
+/* I want to find the <a> whose href starts with https:// */
+/* ^ -> Starts with
+$ -> Ends with
+* -> contains */
+a[href^="https://"] {
+    color: yellow;
+}
+a[href$=".jpg"] {
+    color: maroon;
+}
+a[href*="/"] {
+    color: red;
+}
+img[src^="../"] {
+    border: 10px solid gray;
+} 
+/* e.) Pseudo Selectors */
+/* elementName: pseudoProperty { ... } */
+ol:first-child {
+    color: red;
+}
+li:first-child {
+    color: green;
+}
+.ordered-list-item:last-child {
+    color: red;
+}
+.unordered-list-item:first-child {
+    color: blue;
+}
+.ordered-list-item:nth-child(3) {
+    color: yellow;
+}
+
