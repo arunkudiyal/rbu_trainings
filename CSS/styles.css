@@ -1,0 +1,12 @@
+/* 1. Selectors */
+
+/* selector { cssProperty: cssValue; } */
+/* a.) Element Selector - Selects element based on the name */
+h1 {
+    color: blue;
+}
+/* b.) id Selector - Selects the element based on the id. */
+#heading-one {
+    color: green;
+}
+/* c.) class Selector - Selects the elements based on the class name */
