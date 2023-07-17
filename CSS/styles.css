@@ -52,3 +52,19 @@ li:first-child {
     color: yellow;
 }
 
+/* Units of Measurements */
+/* 1. Absolute Unit (px, cm, mm, inc, ... ), 2. Relative Unit (em) */
+p {
+    /* font-size: 18px ; */
+    font-size: 1.2em; 
+    /* font-size: 5cm; */
+}
+
+img {
+    height: 720px;
+    width: 75%;
+}
+
+/* Colors :- 1. Hex Code, 2. Name, 3. RGB(), 4. */
+/* Gradients :- 1. Linear G, 2. Radial G. */
+/* 1. Linear G */
