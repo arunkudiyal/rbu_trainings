@@ -129,3 +129,12 @@ form {
     1. Named Colors     2. HEX Code     3. RBG() -> rgb(red, green, blue)   4. RGBA() -> rgb(red, green, blue, absolute) -> abs [0-1]; 
     */
 }
+
+#container-four {
+    width: 400px;
+    height: 400px;
+
+    background: radial-gradient(circle, black 10%, red 20%, blue 25%, green 30%, yellow 80%, white 90%);
+}
+
+/* Fonts and Font-Family */
