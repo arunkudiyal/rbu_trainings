@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
 /* 1. Selectors */
 body {
     background: linear-gradient(to bottom, rgba(162, 193, 242, 1), rgba(162, 193, 242, 0));
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
 }
 /* selector { cssProperty: cssValue; } */
 /* a.) Element Selector - Selects element based on the name */
 h1 {
     color: blue;
+    text-align: center;
 }
 /* b.) id Selector - Selects the element based on the id. */
 #heading-one:hover {
@@ -58,7 +62,7 @@ li:first-child {
 /* 1. Absolute Unit (px, cm, mm, inc, ... ), 2. Relative Unit (em) */
 p {
     /* font-size: 18px ; */
-    font-size: 1.2em; 
+    font-size: 1.1em; 
     /* font-size: 5cm; */
 }
 
