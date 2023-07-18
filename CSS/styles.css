@@ -1,5 +1,7 @@
 /* 1. Selectors */
-
+body {
+    background: linear-gradient(to bottom, rgba(162, 193, 242, 1), rgba(162, 193, 242, 0));
+}
 /* selector { cssProperty: cssValue; } */
 /* a.) Element Selector - Selects element based on the name */
 h1 {
@@ -95,4 +97,35 @@ form {
 
     /* NOTE:- padding & margin are both parent properties -> they also have sub-properties associated w them. */
     /* padding-left:; padding-right:; padding-top:; padding-bottom:; margin-top:; margin-bottom:; margin-left:; margin-right:; */
+}
+
+/* background: */
+#container-two {
+    width: 65%;
+    height: 500px;
+    /* NOTE:- background is a parent property */
+    /* background: red; */
+    background: url('https://cdn.wallpapersafari.com/13/84/wlZ31L.jpg');
+    background-repeat: no-repeat;
+    background-color: green;
+    /* background-size: 100%; background-size: auto; background-size: cover; */
+    background-size: cover;
+}
+
+/* Gradients - 1. Linear Gradient, 2. Radial Gradients */
+#container-three {
+    width: 65%;
+    height: 400px;
+
+    /* NOTE :- If no direction is provided, default is top to bottom | Directions :- bottom, top, left, right */
+    /* background: linear-gradient(direction, black, red, blue, green, yellow, white); */
+    /* background: linear-gradient(to left, black, red, blue, green, yellow, white); */
+
+    /* NOTE :- You can specify the directions usinh deg values (0deg) starts from bottom, reaches to top */
+    background: linear-gradient(360deg, black, red, blue, green, yellow, white);
+
+    /* 
+    COLORS :-
+    1. Named Colors     2. HEX Code     3. RBG() -> rgb(red, green, blue)   4. RGBA() -> rgb(red, green, blue, absolute) -> abs [0-1]; 
+    */
 }
