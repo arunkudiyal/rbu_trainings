@@ -120,45 +120,46 @@
      <h3>HTML Signup Forms - </h3>
      <form action="https://www.myBE.php/">
         <!-- <span>Your Name : </span><input type=""  /> -->
-        <div>
-            <label>Email :</label>
-            <input type="text" placeholder="enter your name..." /> 
+        <div class="form-item" style="width:90%">
+            <input id="form-name" type="text" placeholder="enter your name..." /> 
         </div>
         <!-- Email :- username@hostname.com -->
-        <div>
-            <input type="email" placeholder="enter your email..." />
+        <div class="form-item" style="width:90%">
+            <input id="form-email" type="email" placeholder="enter your email..." />
         </div>
-         <div>
-            <input type="password" placeholder="enter your password..." /> 
+         <div class="form-item" style="width:90%">
+            <input id="form-pwd" type="password" placeholder="enter your password..." /> 
          </div>
-        <div>
+        <div class="form-item">
+            <label>Date of Birth - </label>
             <input type="date" /> 
         </div>
-        <div>
+        <div class="form-item">
+            <label>How well do you feel? - </label>
             <input type="range" />
         </div> 
         <label>Enter you gender - </label> 
         <!-- <input type="checkbox" /> Male <br />
         <input type="checkbox" /> Female <br />
         <input type="checkbox" /> Others <br /> -->
-        <div>
+        <div class="form-item">
             <select>
                 <option>Male</option>
                 <option>Female</option>
                 <option>Others</option>
             </select> 
         </div>
-        <div>
+        <div class="form-item">
             <label>Upload you CV - </label>
             <input type="file" /> 
         </div>
-        <div>
+        <div class="form-item">
             <input type="color" /> 
         </div>
-        <div>
+        <div class="form-item">
             <button onclick="console.log('Btn was clicked!')">Click Me!</button>
         </div>
-        <div>
+        <div class="form-item">
             <input type="submit" value="Sign Up" />
         </div>
      </form>
