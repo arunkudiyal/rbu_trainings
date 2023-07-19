@@ -10,11 +10,13 @@ body {
 h1 {
     color: blue;
     text-align: center;
+    font-size: 3em;
+    text-shadow: 10px 10px 5px black, -10px -10px 5px red;
 }
 /* b.) id Selector - Selects the element based on the id. */
-#heading-one:hover {
+/* #heading-one:hover {
     color: green;
-}
+} */
 /* c.) class Selector - Selects the elements based on the class name */
 /* #para-one, #para-two, #para-four {
     color: gray;
@@ -28,6 +30,9 @@ h1 {
 /* ^ -> Starts with
 $ -> Ends with
 * -> contains */
+a {
+    text-decoration: line-through;
+}
 a[href^="https://"] {
     color: yellow;
 }
@@ -110,8 +115,8 @@ form {
     /* NOTE:- background is a parent property */
     /* background: red; */
     background: url('https://cdn.wallpapersafari.com/13/84/wlZ31L.jpg');
-    background-repeat: no-repeat;
-    background-color: green;
+    /* background-repeat: no-repeat; */
+    /* background-color: green; */
     /* background-size: 100%; background-size: auto; background-size: cover; */
     background-size: cover;
 }
@@ -142,3 +147,21 @@ form {
 }
 
 /* Fonts and Font-Family */
+
+/* CSS Flex Box */
+#container {
+    display: flex;
+    /* flex-direction: row(default), column, row-reverse, column-reverse; */
+    flex-wrap: wrap;
+    /* justify-content: flex-start, flex-end, center; */
+    justify-content: space-around;
+}
+.container-items {
+    width: 100px;
+    height: 100px;
+    font-size: 6em;
+    text-align: center;
+    background: green;
+    color: white;
+    margin: 15px;
+}
