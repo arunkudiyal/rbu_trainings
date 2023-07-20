@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="./styles.css">
         <title>Bootstrap Document!</title>
     </head>
     <body>
@@ -9,7 +10,7 @@
         <!-- 2. Installing BS (using npm) -->
         <!-- 3. Using Bootstrap CDN -->
         <div class="container-fluid">
-            <h1 class="page-header">Welcome to Bootstrap!</h1>
+            <h1 id="my-header" class="page-header">Welcome to Bootstrap!</h1>
         </div>
         <div class="container">
             <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod est sunt rerum consectetur ipsam, amet animi exercitationem explicabo quasi. Eius optio aperiam placeat pariatur neque?</p>
@@ -28,7 +29,7 @@
             <h3>Contextual Classes - </h3>
             <!-- primary -> blue, success -> green, danger -> red, muted -> gray, info -> light-blue, warning -> yellow/orangish -->
             <p class="text-primary bg-warning">Contextual Class - Primary</p>
-            <p class="text-success">Contextual Class - Success</p>
+            <p style="color: purple;" class="text-success">Contextual Class - Success</p>
             <p class="text-danger">Contextual Class - Danger</p>
             <p class="text-info">Contextual Class - Info</p>
             <p class="text-warning">Contextual Class - Warning</p>
@@ -42,6 +43,94 @@
             <p class="bg-info">Contextual Class - Info</p>
             <p class="bg-warning">Contextual Class - Warning</p>
             <!-- NOT POSSIBLE :- <p class="bg-muted">Contextual Class - Muted</p> -->
+
+            <hr />
+
+            <h3>Buttons / Submits & Anchors - </h3>
+            <button class="btn btn-primary">Button</button>
+            <input class="btn btn-success" type="submit" value="SUBMIT">
+            <a class="btn btn-danger" href="#">ANCHOR</a>
+
+            <h5>Button Sizes - </h5>
+            <button class="btn btn-primary btn-sm">Button - 1</button>
+            <button class="btn btn-primary btn-lg">Button - 2</button>
+            <button class="btn btn-primary btn-xs">Button - 3</button>
+
+            <hr />
+
+            <h3>Tables - </h3>
+            <table class="table table-bordered table-condensed table-hover">
+                <tr>
+                    <!-- <td><b>Emp_id</b></td> -->
+                    <th>Emp_ID</th>
+                    <th>Emp_Name</th>
+                    <th>Emp Email</th>
+                    <th>Emp Designation</th>
+                </tr>
+                <tr>
+                    <!-- <td><b>Emp_id</b></td> -->
+                    <td>00123456</td>
+                    <td>Employee-1</td>
+                    <td>employeeOne@email.com</td>
+                    <td>SDE-1</td>
+                </tr>
+                <tr>
+                    <td>00123456</td>
+                    <td>Employee-2</td>
+                    <td>employeeTwo@email.com</td>
+                    <td>SDE-2</td>
+                </tr>
+                <tr>
+                    <td>004533456</td>
+                    <td>Employee-3</td>
+                    <td>employeeThree@email.com</td>
+                    <td>SDE-Intern</td>
+                </tr>
+             </table>
         </div>
+
+        <hr />
+
+        <div class="container-fluid">
+            <h3>Forms :- </h3>
+        </div> <br />
+        <div class="container">
+            <form style="border: 2px double black; padding: 20px;">
+                <!-- <span>Your Name : </span><input type=""  /> -->
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="enter your name..." /> 
+                </div>
+                <!-- Email :- username@hostname.com -->
+                <div class="form-group">
+                    <input class="form-control" type="email" placeholder="enter your email..." />
+                </div>
+                 <div class="form-group">
+                    <input class="form-control" type="password" placeholder="enter your password..." /> 
+                 </div>
+                <div class="form-group">
+                    <input class="form-control" type="date" /> 
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="range" />
+                </div> 
+                <label>Enter you gender - </label>
+                <div class="form-group">
+                    <select class="form-control">
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Others</option>
+                    </select> 
+                </div>
+                <div class="form-group">
+                    <label>Upload you CV - </label>
+                    <input class="form-control" type="file" /> 
+                </div>
+                <div class="form-group">
+                    <input class="btn btn-success btn-lg" type="submit" value="Sign Up" />
+                </div>
+             </form>
+        </div>
+
+        <div style="height: 500px;"></div>
     </body>
 </html>
