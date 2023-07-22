@@ -126,35 +126,91 @@
 
 // 2. JS OBJECTS - {  } :-
 // let myObj = { key1: value1, key2: value2 } 
-// let myObj = {
-//     name: 'User One', 
-//     email: 'userone@service.com',
-//     password: 'examplepwd',
-//     isEmployed: true,
-//     hobbies: ['Music', 'Reading Books', 'Travelling'],
-//     address: {
-//         street: 'Street - 1',
-//         city: 'Kharar',
-//         state: 'Punjab',
-//         pincodes: [1234, 5678]
-//     }
-// }
-
-let myObj = new Object()
-myObj.name = 'User One'
-myObj.email = 'userone@service.com'
-myObj.password = 'examplepwd'
-myObj.isEmployed = true
-myObj.hobbies = ['Music', 'Reading Books', 'Travelling']
-myObj.address = {
-    street: 'Street - 1',
-    city: 'Kharar',
-    state: 'Punjab',
-    pincodes: [1234, 5678]
+let user = {
+    name: 'User One', 
+    email: 'userone@service.com',
+    password: 'examplepwd',
+    isEmployed: true,
+    hobbies: ['Music', 'Reading Books', 'Travelling'],
+    address: {
+        street: 'Street - 1',
+        city: 'Kharar',
+        state: 'Punjab',
+        pincodes: [1234, 5678]
+    }
 }
-console.log(myObj)
+
+// let myObj = new Object()
+// myObj.name = 'User One'
+// myObj.email = 'userone@service.com'
+// myObj.password = 'examplepwd'
+// myObj.isEmployed = true
+// myObj.hobbies = ['Music', 'Reading Books', 'Travelling']
+// myObj.address = {
+//     street: 'Street - 1',
+//     city: 'Kharar',
+//     state: 'Punjab',
+//     pincodes: [1234, 5678]
+// }
+// console.log(myObj)
 
 // console.log(`Hi, this is user ${myObj.name}, my email is ${myObj.email} & my password is ${myObj.password}`)
 // console.log(myObj.hobbies[0])
 // console.log(myObj.address.city)
 // console.log(myObj.address.pincodes[1]);
+
+
+// 3. Array of Objects :- [ {}, {}, {} ]
+const users = [
+    {
+        name: 'User One', 
+        email: 'userone@service.com',
+        password: 'examplepwd',
+        isEmployed: true,
+        hobbies: ['Music', 'Reading Books', 'Travelling'],
+        address: {
+            street: 'Street - 1',
+            city: 'Kharar',
+            state: 'Punjab',
+            pincodes: [1234, 5678]
+        }
+    },              // users[0].password ; users[0].address.pincodes[0]
+    {
+        name: 'User Two', 
+        email: 'usertwo@service.com',
+        password: 'examplepwd2',
+        isEmployed: false,
+        hobbies: ['Music', 'Travelling'],
+        address: {
+            street: 'Street - 2',
+            city: 'Kharar',
+            state: 'Punjab',
+            pincodes: [1234, 5678]
+        }
+    }, 
+    {
+        name: 'User Three', 
+        email: 'userthree@service.com',
+        password: 'examplepwd3',
+        isEmployed: true,
+        hobbies: ['Reading Books', 'Travelling'],
+        address: {
+            street: 'Street - 3',
+            city: 'Kharar',
+            state: 'Punjab',
+            pincodes: [1234, 5678]
+        }
+    }
+]
+console.log(users)
+
+// 4. JSON (JavaScript Object Notation)
+// JS -> interface -> JSON -> 2 functions.
+
+// 1. stringify() -> AoO to JSON
+const myJSONResponse = JSON.stringify(users);
+console.log(myJSONResponse)
+
+// 2. parse() -> JSON to AoO
+const convertAoO = JSON.parse(myJSONResponse)
+console.log(convertAoO)
