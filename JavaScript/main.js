@@ -72,48 +72,54 @@
 // Non-Primitive Data Types (Non-PDTs)
 // a.) Arrays
 // Contiguous | [ ]
-let numbers = [10, 20, 30, 40, 50]
-let arr = [];
-let arrObj = new Array(10);
+// let numbers = [10, 20, 30, 40, 50]
+// let arr = [];
+// let arrObj = new Array(10);
 
-console.log(typeof(numbers))
-console.log(typeof(arr))
-console.log(typeof(arrObj))
+// console.log(typeof(numbers))
+// console.log(typeof(arr))
+// console.log(typeof(arrObj))
 
-// for(let i=0; i < numbers.length; i++) {
-//     console.log(numbers[i])
-// }
+// // for(let i=0; i < numbers.length; i++) {
+// //     console.log(numbers[i])
+// // }
 
-console.log(numbers)
+// console.log(numbers)
 
-// Array Methods
-numbers.push(60)
-console.log(numbers)
+// // Array Methods
+// numbers.push(60)
+// console.log(numbers)
 
-let myArr1 = [100, 200, 300, 400, 500]
-// let myArr2 = myArr1                             // THIS IS NOT A COPY MECH.
-// Array Spread Operators
-let myArr2 = [ ...myArr1 ]
-myArr1.push(-10)
-myArr2.push(1000)
-console.log(myArr1)                             // [100, 200, 300, 400, 500, -10]
-console.log(myArr2)                             // [100, 200, 300, 400, 500, 1000]
+// let myArr1 = [100, 200, 300, 400, 500]
+// // let myArr2 = myArr1                             // THIS IS NOT A COPY MECH.
+// // Array Spread Operators
+// let myArr2 = [ ...myArr1 ]
+// myArr1.push(-10)
+// myArr2.push(1000)
+// console.log(myArr1)                             // [100, 200, 300, 400, 500, -10]
+// console.log(myArr2)                             // [100, 200, 300, 400, 500, 1000]
 
-// pop()
-myArr1.pop()
-console.log(myArr1)
+// // pop()
+// myArr1.pop()
+// console.log(myArr1)
 
-let deletedElement = myArr1.shift()
-console.log(myArr1)
+// let deletedElement = myArr1.shift()
+// console.log(myArr1)
 
-let newLength = myArr1.unshift(50);
-console.log(newLength)                          // 5
-console.log(myArr1)
+// let newLength = myArr1.unshift(50);
+// console.log(newLength)                          // 5
+// console.log(myArr1)
 
-let num1 = [10, 20, 30, 40]
-let num2 = [100, 200, 300, 400, 500]
-let combinedArray = num2.concat(num1);
-console.log(combinedArray)                      // 
+// let num1 = [10, 20, 30, 40]
+// let num2 = [100, 200, 300, 400, 500]
+// let combinedArray = num2.concat(num1);
+// console.log(combinedArray)                      //
+// int[] arr = new int[10]; 
 
 let dummyArray = [10, "String", true, null, undefined, []]
 console.log(dummyArray)
+
+// let twoDArray = [ [10, 20, 30], [40, 50, 60], [70, 80, 90]]
+let twoDArray = [ [], [], [] ]
+
+console.log(twoDArray[1][1])
