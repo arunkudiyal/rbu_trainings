@@ -116,10 +116,45 @@
 // console.log(combinedArray)                      //
 // int[] arr = new int[10]; 
 
-let dummyArray = [10, "String", true, null, undefined, []]
-console.log(dummyArray)
+// let dummyArray = [10, "String", true, null, undefined, []]
+// console.log(dummyArray)
 
-// let twoDArray = [ [10, 20, 30], [40, 50, 60], [70, 80, 90]]
-let twoDArray = [ [], [], [] ]
+// // let twoDArray = [ [10, 20, 30], [40, 50, 60], [70, 80, 90]]
+// let twoDArray = [ [], [], [] ]
+// console.log(twoDArray[1][1])
 
-console.log(twoDArray[1][1])
+
+// 2. JS OBJECTS - {  } :-
+// let myObj = { key1: value1, key2: value2 } 
+// let myObj = {
+//     name: 'User One', 
+//     email: 'userone@service.com',
+//     password: 'examplepwd',
+//     isEmployed: true,
+//     hobbies: ['Music', 'Reading Books', 'Travelling'],
+//     address: {
+//         street: 'Street - 1',
+//         city: 'Kharar',
+//         state: 'Punjab',
+//         pincodes: [1234, 5678]
+//     }
+// }
+
+let myObj = new Object()
+myObj.name = 'User One'
+myObj.email = 'userone@service.com'
+myObj.password = 'examplepwd'
+myObj.isEmployed = true
+myObj.hobbies = ['Music', 'Reading Books', 'Travelling']
+myObj.address = {
+    street: 'Street - 1',
+    city: 'Kharar',
+    state: 'Punjab',
+    pincodes: [1234, 5678]
+}
+console.log(myObj)
+
+// console.log(`Hi, this is user ${myObj.name}, my email is ${myObj.email} & my password is ${myObj.password}`)
+// console.log(myObj.hobbies[0])
+// console.log(myObj.address.city)
+// console.log(myObj.address.pincodes[1]);
