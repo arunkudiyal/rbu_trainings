@@ -11,6 +11,7 @@ const employees = [
     {id: 10030, name: 'Employee 10', designation: 'HR', start: 1986, end: 2020},
     {id: 10031, name: 'Employee 11', designation: 'Sales', start: 1980, end: 2009}
 ]
+const demoArr = [1, 2, 3, 4, 5, 6, 7]
 const ages = [65, 42, 16, 10, 5, 43, 74, 45, 55, 76, 81, 11, 14, 12, 9];
 // Higher Order Array Methods
 // arrayName.methodName
@@ -25,6 +26,20 @@ const ages = [65, 42, 16, 10, 5, 43, 74, 45, 55, 76, 81, 11, 14, 12, 9];
 const employeeNames = employees.map( employee =>  employee.id)
 console.log(employeeNames)
 
-// 3. filter() -> 
+// 3. filter() -> Returns the elements of an array that meet the condition specified in a callback function.
 const empNames = employees.filter( employee => employee.end - employee.start >= 10 ).map(emp => emp.name)
 console.log(empNames)
+
+const empIDs = employees.filter(emp => emp.designation == 'IT' || emp.designation == 'HR' && emp.end - emp.start >= 6).map(emp => emp.id).sort((a, b) => b - a)
+console.log(empIDs)
+
+// 4. sort() -> Sorts an array in place. This method mutates the array and returns a reference to the same array.
+// firstV - secondV --> ASCENDING ORDER
+// secondV - firstV --> DESCENDING ORDER
+console.log(ages)
+ages.sort( (a, b) => b - a )
+console.log(ages)
+
+// 5. reduce()
+const sum = demoArr.reduce( (number, initialSum) => {return number * initialSum}, 1 )
+console.log(sum)
