@@ -26,8 +26,8 @@
 // console.log( document.querySelectorAll('.list-group-item') )
 
 
-// DOM MANIPULATION METHODS :-
-const heading = document.querySelector('#header-title')
+// DOM MANIPULATION METHODS / PROPERTIES :-
+// const heading = document.querySelector('#header-title')
 
 // 1. textContent -> text in b/w of the <> and </> of the elt
 // heading.textContent = 'Welcome to DOM';
@@ -39,19 +39,63 @@ const heading = document.querySelector('#header-title')
 // textContent changes the text b/w <> & </> while innerHTML adds a child to the given element
 
 // CSS with JavaScript (.style)
-const secondHeading = document.querySelector('#second-heading')
+// const secondHeading = document.querySelector('#second-heading')
 
-// JS Function - setTimeOut()
-// Syntax -> setTimeOut( callfn, timeoutDelay (in ms) )
-setTimeout( () => {
-    secondHeading.style.backgroundColor = 'purple'
-    secondHeading.style.color = 'white'
-    secondHeading.style.padding = '10px'
-    secondHeading.style.textAlign = 'center'
-}, 3000)
+// // JS Function - setTimeOut()
+// // Syntax -> setTimeOut( callfn, timeoutDelay (in ms) )
+// setTimeout( () => {
+//     secondHeading.style.backgroundColor = 'purple'
+//     secondHeading.style.color = 'white'
+//     secondHeading.style.padding = '10px'
+//     secondHeading.style.textAlign = 'center'
+// }, 3000)
 
-setTimeout(() => {
-    heading.innerHTML = "<h2>Welocme to DOM</h2>"
-}, 5000)
+// setTimeout(() => {
+//     heading.innerHTML = "<h2>Welocme to DOM</h2>"
+// }, 5000)
 
-// EVENTS :-
+// document.getElementById('btn').textContent = 'Press'
+
+
+// const listItems = document.getElementsByClassName('list-group-item');
+// const listArray = []
+
+// for(let i=0; i < listItems.length; i++) {
+//     listArray.push(listItems[i])
+// }
+
+// console.log(listItems)
+// // for(let i=0; i < listItems.length; i++) {
+// //     // Odd Items
+// //     if(i%2 == 0) {
+// //         listItems[i].style.backgroundColor = '#f4f4f4'
+// //     }    
+// // }
+
+// console.log(listArray)
+// listArray.forEach( (item, index) => {
+//     if(index%2 == 0) item.style.backgroundColor = '#f4f4f4'
+// } )
+
+
+
+// EVENTS IN DOM
+
+// element.addEventListner( eventName, () => {} )
+// element.addEventListner( eventName, fuctionName )
+
+const myBtn = document.getElementById('btn')
+myBtn.addEventListener( 'dblclick', () => {
+    console.log('My Button was Clicked!')
+} )
+
+document.getElementById('item-one').addEventListener('click', () => {
+    console.log('Item -1 was clicked!')
+})
+
+// SUBMIT BUTTON
+document.getElementById('submitBtn').addEventListener('click', () => {
+    console.log('Submit Button was clicked!')
+})
+
+// Keyboard Events
