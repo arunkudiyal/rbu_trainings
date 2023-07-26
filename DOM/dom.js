@@ -135,7 +135,16 @@
 // })
 
 // ALTERNATIVE
-document.getElementById('submitBtn').addEventListener('click', (e) => {
-    e.preventDefault()
-    console.log( document.getElementById('text-input').value )
+// document.getElementById('submitBtn').addEventListener('click', (e) => {
+//     e.preventDefault()
+//     console.log( document.getElementById('text-input').value )
+// })
+
+// FUN ACTIVITY
+document.querySelector('#container-box').addEventListener('mouseenter', (e) => {
+    console.log(e);
+    document.querySelector('#container-box').style.backgroundColor = `rgb(0, ${e.offsetX}, ${e.offsetY})`
+})
+document.querySelector('#container-box').addEventListener('mouseleave', (e) => {
+    document.querySelector('#container-box').style.backgroundColor = `rgb(100, ${e.offsetX}, ${e.offsetY})`   
 })
