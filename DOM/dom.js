@@ -84,21 +84,26 @@
 // element.addEventListner( eventName, () => {} )
 // element.addEventListner( eventName, fuctionName )
 
-document.getElementById('btn').addEventListener( 'click', (event) => {
-    console.log(event)
-    console.log('Button is clicked!')
-} )
-document.getElementById('btn').addEventListener( 'dblclick', () => {
-    console.log('Button is double clicked!')
-} )
+// document.getElementById('btn').addEventListener( 'click', (event) => {
+//     console.log(event)
+//     console.log('Button is clicked!')
+// } )
+// document.getElementById('btn').addEventListener( 'dblclick', () => {
+//     console.log('Button is double clicked!')
+// } )
 
-document.getElementById('submitBtn').addEventListener('click', (e) => {
-    e.preventDefault()
-    console.log('Subit Button was Clicked!')
-})
+// document.getElementById('submitBtn').addEventListener('click', (e) => {
+//     e.preventDefault()
+//     console.log('Subit Button was Clicked!')
+// })
 
-document.getElementById('text-input').addEventListener('mouseenter', () => { console.log('Cursror entered the element') })
-document.getElementById('text-input').addEventListener('mouseleave', () => { console.log('Cursror left the element') })
+// document.getElementById('text-input').addEventListener('mouseenter', () => { console.log('Cursror entered the element') })
+// document.getElementById('text-input').addEventListener('mouseleave', () => { console.log('Cursror left the element') })
+
+// document.getElementById('item-one').addEventListener('click', () => {
+//     document.getElementById('item-two').style.backgroundColor = 'yellow'
+// })
+// document.getElementById('text-input').addEventListener('focus', () => { console.log('Element was focused!') })
 
 // setTimeout( () => {
 //     console.log('Callback was executed...')
@@ -106,3 +111,31 @@ document.getElementById('text-input').addEventListener('mouseleave', () => { con
 // console.log('Code after setTimeout')
 
 // Keyboard Events
+// document.getElementById('text-input').addEventListener('copy', () => {
+//     console.log('Data was copied!')
+// })
+// document.getElementById('text-input').addEventListener('cut', () => {
+//     console.log('Data was cut!')
+// })
+// document.getElementById('text-input').addEventListener('paste', () => {
+//     console.log('Data was pasted!')
+// })
+// document.getElementById('text-input').addEventListener('keydown', () => {
+//     console.log('Key is down')
+// })
+// document.getElementById('text-input').addEventListener('keyup', () => {
+//     console.log('Key is up')
+// })
+// document.getElementById('text-input').addEventListener('keypress', () => {
+//     console.log('Key is pressed')
+// })
+
+// document.getElementById('text-input').addEventListener('keypress', (e) => {
+//     console.log(e.target.value)
+// })
+
+// ALTERNATIVE
+document.getElementById('submitBtn').addEventListener('click', (e) => {
+    e.preventDefault()
+    console.log( document.getElementById('text-input').value )
+})
