@@ -84,18 +84,25 @@
 // element.addEventListner( eventName, () => {} )
 // element.addEventListner( eventName, fuctionName )
 
-const myBtn = document.getElementById('btn')
-myBtn.addEventListener( 'dblclick', () => {
-    console.log('My Button was Clicked!')
+document.getElementById('btn').addEventListener( 'click', (event) => {
+    console.log(event)
+    console.log('Button is clicked!')
+} )
+document.getElementById('btn').addEventListener( 'dblclick', () => {
+    console.log('Button is double clicked!')
 } )
 
-document.getElementById('item-one').addEventListener('click', () => {
-    console.log('Item -1 was clicked!')
+document.getElementById('submitBtn').addEventListener('click', (e) => {
+    e.preventDefault()
+    console.log('Subit Button was Clicked!')
 })
 
-// SUBMIT BUTTON
-document.getElementById('submitBtn').addEventListener('click', () => {
-    console.log('Submit Button was clicked!')
-})
+document.getElementById('text-input').addEventListener('mouseenter', () => { console.log('Cursror entered the element') })
+document.getElementById('text-input').addEventListener('mouseleave', () => { console.log('Cursror left the element') })
+
+// setTimeout( () => {
+//     console.log('Callback was executed...')
+// }, 3000 )
+// console.log('Code after setTimeout')
 
 // Keyboard Events
