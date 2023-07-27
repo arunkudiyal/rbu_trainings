@@ -148,3 +148,45 @@ document.querySelector('#container-box').addEventListener('mouseenter', (e) => {
 document.querySelector('#container-box').addEventListener('mouseleave', (e) => {
     document.querySelector('#container-box').style.backgroundColor = `rgb(100, ${e.offsetX}, ${e.offsetY})`   
 })
+
+
+// DOM Traversals
+
+// // 1. parentElement
+// console.log(document.getElementById('items').parentElement)
+
+// // 2. children
+// const items = document.getElementById('items').children
+// for(let i=0; i < items.length; i++) {
+//     if(i % 2 == 0) {
+//         items[i].style.backgroundColor = '#f4f4f4'
+//     }
+// }
+
+// // 3. firstChild
+// console.log(document.getElementById('items').firstChild)
+// console.log(document.getElementById('items').firstElementChild)
+
+// // 4. lastChild
+// console.log(document.getElementById('items').lastChild)
+// console.log(document.getElementById('items').lastElementChild)
+
+// // 5. siblings -> previousSibling ; nextSibling
+// console.log(document.getElementById('head').previousSibling)
+// console.log(document.getElementById('head').previousElementSibling)
+// console.log(document.getElementById('head').nextSibling)
+// console.log(document.getElementById('head').nextElementSibling)
+
+// console.log(document.getElementById('second-heading').previousElementSibling)
+
+
+// Creating HTML using JS
+const myDiv = document.createElement('div')
+myDiv.textContent = 'Demo Text'
+myDiv.setAttribute('id', 'my-div')
+myDiv.setAttribute('class', 'my-div-class')
+
+// ADding element to the HTML - appendChild()
+document.getElementById('dummy-div').appendChild(myDiv)
+
+console.log(myDiv)
