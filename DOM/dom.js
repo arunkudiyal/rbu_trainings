@@ -141,13 +141,13 @@
 // })
 
 // FUN ACTIVITY
-document.querySelector('#container-box').addEventListener('mouseenter', (e) => {
-    console.log(e);
-    document.querySelector('#container-box').style.backgroundColor = `rgb(0, ${e.offsetX}, ${e.offsetY})`
-})
-document.querySelector('#container-box').addEventListener('mouseleave', (e) => {
-    document.querySelector('#container-box').style.backgroundColor = `rgb(100, ${e.offsetX}, ${e.offsetY})`   
-})
+// document.querySelector('#container-box').addEventListener('mouseenter', (e) => {
+//     console.log(e);
+//     document.querySelector('#container-box').style.backgroundColor = `rgb(0, ${e.offsetX}, ${e.offsetY})`
+// })
+// document.querySelector('#container-box').addEventListener('mouseleave', (e) => {
+//     document.querySelector('#container-box').style.backgroundColor = `rgb(100, ${e.offsetX}, ${e.offsetY})`   
+// })
 
 
 // DOM Traversals
@@ -180,13 +180,26 @@ document.querySelector('#container-box').addEventListener('mouseleave', (e) => {
 // console.log(document.getElementById('second-heading').previousElementSibling)
 
 
-// Creating HTML using JS
-const myDiv = document.createElement('div')
-myDiv.textContent = 'Demo Text'
-myDiv.setAttribute('id', 'my-div')
-myDiv.setAttribute('class', 'my-div-class')
+// console.log( document.getElementById('head').parentElement.parentElement.parentElement )
 
-// ADding element to the HTML - appendChild()
-document.getElementById('dummy-div').appendChild(myDiv)
+// // Creating HTML using JS
+// const myDiv = document.createElement('div')
+// myDiv.textContent = 'Demo Text'
+// myDiv.setAttribute('id', 'my-div')
+// myDiv.setAttribute('class', 'my-div-class')
 
-console.log(myDiv)
+// // ADding element to the HTML - appendChild()
+// document.getElementById('dummy-div').appendChild(myDiv)
+
+// console.log(myDiv)
+
+
+// Item Lister Application
+document.getElementById('submitBtn').addEventListener('click', (e) => {
+    e.preventDefault()
+    const text = document.getElementById('text-input').value
+    const newLi = document.createElement('li')
+    newLi.textContent = text
+    newLi.setAttribute('class', 'list-group-item')
+    document.getElementById('items').appendChild(newLi)
+})
