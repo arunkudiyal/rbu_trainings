@@ -201,5 +201,6 @@ document.getElementById('submitBtn').addEventListener('click', (e) => {
     const newLi = document.createElement('li')
     newLi.textContent = text
     newLi.setAttribute('class', 'list-group-item')
+    document.getElementById('text-input').value = ''
     document.getElementById('items').appendChild(newLi)
 })
