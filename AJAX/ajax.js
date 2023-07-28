@@ -19,6 +19,18 @@ xhr.onreadystatechange = () => {
         const jsonRes = xhr.responseText
         const res = JSON.parse(jsonRes)
         console.log(res)
+        let output = ''
+        // p1 -> res[0].login | p2 -> res[0].avatar_url
+        for(let i=0; i < res.length; i++) {
+            output += `
+                <div>
+                    <img src="${res[i].avatar_url}" /> <br />
+                    <p class="lead">${res[i].login}</p>
+                </div>
+            `
+        }
+        console.log(output)
+        document.getElementById('myDiv').innerHTML = output
     }
 }
 xhr.send()
