@@ -165,3 +165,35 @@ form {
     color: white;
     margin: 15px;
 }
+
+#container-one {
+    width: 70%;
+    height: 400px;
+}
+
+/* Media Queries */
+/* Media types -> screen | print | all (screen + print) */
+
+/* Mobile Phones - min:- 0px max :- 500px */
+@media all and (max-width: 280px) {
+    body {
+        font-size: 0.7em;
+    }
+
+    #container-one {
+        background-color: black;
+    }
+}   
+
+@media only screen and (min-width: 281px) and (max-width: 500px) {
+    #container-one {
+        background-color: purple;
+    }
+}
+
+/* Tablet Phones | min - 501px ; max - 1024px */
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
+    #container-one {
+        background-color: purple;
+    }
+}
